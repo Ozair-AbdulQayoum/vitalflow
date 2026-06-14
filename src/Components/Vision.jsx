@@ -11,7 +11,7 @@ function Vision() {
   return (
     <section className="w-full py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
-        {/* LEFT SIDE */}
+        {/* LEFT CONTENT */}
         <div>
           <h5 className="text-blue-600 font-semibold tracking-wide">
             Our Vision
@@ -22,13 +22,13 @@ function Vision() {
           </h2>
 
           <ul className="mt-8 space-y-4">
-            {visionList.map((item, index) => (
+            {visionList.map((text, i) => (
               <li
-                key={index}
+                key={i}
                 className="flex items-center gap-3 text-gray-700 text-lg"
               >
                 <span className="w-3 h-3 bg-blue-600 rounded-full"></span>
-                {item}
+                {text}
               </li>
             ))}
           </ul>
@@ -38,7 +38,7 @@ function Vision() {
           </button>
         </div>
 
-        {/* RIGHT IMAGE (PUBLIC FOLDER) */}
+        {/* RIGHT IMAGE */}
         <div className="flex justify-center">
           <img
             src="/img-4.jpg"
