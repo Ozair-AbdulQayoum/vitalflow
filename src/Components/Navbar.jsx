@@ -20,7 +20,7 @@ function Navbar() {
           <h3 className="text-xl font-bold text-black">Vital+Flow</h3>
         </div>
 
-        {/* Desktop Menu */}
+        {/* Desktop Nav Links */}
         <ul className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
             <li key={item.id}>
@@ -34,9 +34,12 @@ function Navbar() {
           ))}
         </ul>
 
-        {/* Mobile Button */}
-        <button className="md:hidden text-3xl" onClick={() => setOpen(!open)}>
-          ☰
+        {/* Menu Icon (Always visible in mobile + also on desktop if you want) */}
+        <button
+          onClick={() => setOpen(!open)}
+          className="text-3xl text-gray-800 md:hidden"
+        >
+          {open ? "✖" : "☰"}
         </button>
       </nav>
 
