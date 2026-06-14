@@ -11,14 +11,15 @@ function Vision() {
   return (
     <section className="w-full py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
+        {/* LEFT SIDE */}
         <div>
           <h5 className="text-blue-600 font-semibold tracking-wide">
             Our Vision
           </h5>
 
-          <h3 className="text-3xl md:text-5xl font-bold text-gray-900 mt-3 leading-tight">
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mt-3 leading-tight">
             Passionate About Creating healthier, happier lives
-          </h3>
+          </h2>
 
           <ul className="mt-8 space-y-4">
             {visionList.map((item, index) => (
@@ -32,11 +33,12 @@ function Vision() {
             ))}
           </ul>
 
-          <button className="mt-8 bg-blue-600 hover:bg-blue-700 text-white px-7 py-3 rounded-xl">
-            Book a call
+          <button className="mt-8 bg-blue-600 hover:bg-blue-700 text-white px-7 py-3 rounded-xl transition">
+            Book a Call
           </button>
         </div>
 
+        {/* RIGHT IMAGE (PUBLIC FOLDER) */}
         <div className="flex justify-center">
           <img
             src="/img-4.jpg"
