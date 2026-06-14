@@ -1,6 +1,5 @@
 import Navbar from "./Components/Navbar";
 import AboutUs from "./Components/AboutUs";
-import logo from "./assets/logo.png";
 import "./App.css";
 import Mission from "./Components/Mission";
 import Vision from "./Components/Vision";
